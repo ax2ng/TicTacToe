@@ -20,7 +20,7 @@ namespace TicTacToe
         private string value = "x";
         private int xWins = 0;
         private int oWins = 0;
-        private static readonly Brush DEFAULTBRUSH = new SolidColorBrush(Color.FromArgb(225, 142,142,166));
+        
 
         private void ButtonReset_Click(object sender, RoutedEventArgs e)
         {
@@ -109,7 +109,7 @@ namespace TicTacToe
         {
             button.Content = "";
             button.IsEnabled = true;
-            button.Foreground = DEFAULTBRUSH;
+            
         }
 
         private bool IsWin(Button Button1, Button Button2, Button Button3) =>
