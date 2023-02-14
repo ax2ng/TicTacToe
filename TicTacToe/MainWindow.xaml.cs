@@ -17,7 +17,7 @@ namespace TicTacToe
 {
     public partial class MainWindow : Window
     {
-        private string value = "x";
+        private string value = "X";
         private int xWins = 0;
         private int oWins = 0;
         
@@ -60,7 +60,7 @@ namespace TicTacToe
                 !Button7.IsEnabled && !Button8.IsEnabled && !Button9.IsEnabled)
                 GameOver("");
 
-            value = value == "X" ? "O" : "X";
+            value = value == "O" ? "X" : "O";
 
 
         }
